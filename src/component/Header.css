@@ -1,0 +1,147 @@
+.navbar {
+  background-color: #303030;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3545 !important; 
+}
+
+.btn-dark {
+  background-color: #484848 !important;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #ff0000;
+  border: none;
+}
+
+.btn {
+  border-radius: 0;
+  font-weight: bold;
+  white-space: nowrap; 
+  width: auto; 
+  padding: 0.5rem; 
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container .form-control {
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  width: 300px;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  width: 400px;
+}
+
+.search-button {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); 
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease; 
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.search-button:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f); 
+  transform: scale(1.05); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 300px; 
+  overflow-y: auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+}
+
+.search-result-item {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.no-results {
+  padding: 0.5rem;
+  color: #dc3545;
+}
+
+@media (min-width: 767.99px) {
+  .navbar .btn {
+    width: 130px;
+  }
+  .navbar-brand.me-auto {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .navbar .btn {
+    font-size: 0.875rem;
+    padding: 0.3rem 0.6rem; 
+    white-space: nowrap; 
+    width: 30%;
+  }
+
+  .navbar .d-flex.flex-nowrap.overflow-auto {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .navbar .d-flex.flex-nowrap.overflow-auto::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+
+  .navbar .d-flex.flex-nowrap.overflow-auto {
+    overflow: -moz-scrollbars-none; /* Hide scrollbars for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbars for IE 10+ */
+    scrollbar-width: none; /* Hide scrollbars for Firefox */
+  }
+  .search-container {
+    order: 1;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.navbar .d-flex.flex-nowrap.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar .d-flex.flex-nowrap.overflow-auto {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
